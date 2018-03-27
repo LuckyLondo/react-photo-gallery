@@ -4,7 +4,7 @@ import uglify from 'rollup-plugin-uglify';
 import { minify } from 'uglify-es';
 
 const name = 'Gallery';
-const path = 'dist/react-photo-gallery';
+const path = 'examples/src';
 const globals = {
 	'prop-types': 'PropTypes',
 	'react-dom': 'ReactDOM',
