@@ -19,9 +19,9 @@ class App extends React.Component {
   }
   loadPhotos() {
     const urlParams = {
-      api_key: '455b5e2fa6b951f9b9ab58a86d5e1f8a',
-      photoset_id: '72157708141247864',
-      user_id: '146659101@N08',
+      api_key: '1ef1ae1476622c6f4d8b42f2060ce069',
+      photoset_id: '72157694215290764',
+      user_id: '157246424@N08',
       format: 'json',
       per_page: '120',
       extras: 'url_m,url_c,url_l,url_h,url_o',
@@ -62,13 +62,7 @@ class App extends React.Component {
       const width = this.state.width;
       return (
         <div className="App">
-          <ExampleBasic title={'Basic Row Layout'} photos={this.state.photos.slice(0, 20)} />
-          <ExampleBasic title={'Basic Column Layout'} direction="column" photos={this.state.photos.slice(40, 60)} />
-          <ExampleWithLightbox photos={this.state.photos.slice(60, 75)} />
-          <ExampleCustomComponentSelection photos={this.state.photos.slice(75, 90)} />
-          <ExampleSortable photos={this.state.photos.slice(90, 100)} />
-          <ExampleDynamicColumns title={'Custom Dynamic Columns'} photos={this.state.photos.slice(100, 120)} />
-          <ExampleDynamicLoading photos={this.state.photos} />
+          <ExampleWithLightbox photos={this.state.photos} />
         </div>
       );
     } else {
